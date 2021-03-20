@@ -1,7 +1,16 @@
+import os
+
+# Create function to clear screen
+def clear_screen():
+	# Use 'cls' if windows else use 'clear' for Unix based systems
+	os.system('cls' if os.name == 'nt' else 'clear')
+
 #Get users name.
+clear_screen()
 name = input("Please enter your name: ")
 
 def woods():
+	clear_screen()
 	print(f"\n{name.title()}...{name.title()}...{name.upper()}! You awake suddenly.... your head is pounding and there is dried blood on your forehead."
 	"\nNot sure of where you are, you slowly get to your feet, still a little wobbly and confused."
 	"\n'Where am I'...you say to yourself.")
@@ -16,6 +25,7 @@ def woods():
 		woods_deep()
 
 def cave():
+	clear_screen()
 	print(f"\nAs you enter the cave you see the remains of an old camp, and manage to find some flint and steel hidden in an old satchel.")
 	print("You get a fire started and begin to feel a little better.")
 	print("You begin to explore the cave a bit more and realize you are not the only inhabitant.")
@@ -33,6 +43,7 @@ def cave():
 	
 
 def woods_deep():
+	clear_screen()
 	print("Looking around the woods a bit more, you notice something.")
 	print("Off to the right hidden in some tall grass you find a dead body.")
 	print("Examining the body a little more you realize it is clutching a note in his left hand.")
@@ -52,6 +63,7 @@ def woods_deep():
 
 
 def abandoned_mine():
+	clear_screen()
 	print("\n\tAs you sneak past the bear and make your way to the door, you test the door to see if it is unlocked and it is."
 		"\nYou push the door open as quietly as you can, but it makes a loud creak. The bear wakes up and is in a furious rage"
 		"\nfrustrated that someone has disturbed his sleep. He starts charging you! You rip the door open the rest of the way and slam it shut."
@@ -79,9 +91,11 @@ def abandoned_mine():
 
 
 def bandits_hideout():
+	clear_screen()
 	print("You have made it to the bandits_hideout.")
 #
 def underground_tomb():
+	clear_screen()
 	print("\tAs you head deeper into the labrynth to check out the screams you heard, you hear some voices in the distance"
 		"\nYou quietly head closer and closer to the voices when you come to what looks like a hideout."
 		"\nSitting in front of you gathered around a small fire are 3 shaggy men cooking a few rats."
@@ -110,6 +124,7 @@ def underground_tomb():
 
 
 def treasure_room():
+	clear_screen()
 	print("\tLooking around you find mountains and mountains of treasure from golden statues, coins, and gems to tapestries, scrolls, and paintings."
 		"\nAmazed, you realize this has to be one of the greatest historical finds of all time."
 		"\nYou take a few more steps towards the treasure and you feel one of the floor tiles sink into the ground and then you hear"
@@ -136,6 +151,7 @@ def treasure_room():
 		game_over()
 
 def treasure_room_2():
+	clear_screen()
 	print("\tAs you walk through the treasure room, you do your best to avoid any more traps."
 		"\nand you continue looking around at the vast amount of gold and weatlh sitting in front of you. You imagine what you could buy with such wealth."
 		"\nas you walk around a large mountain of gold, further down the hall you see another door."
@@ -191,6 +207,7 @@ def treasure_room_2():
 			
 #Emilys contribution!
 def dungeon():
+	clear_screen()
 	print("After admiring the craftmanship of the door, you look up into a dark, cold room. The only light visible in the room"
 		"\nare two burning lanterns enclosing a large list of numbers on the wall. The list shows."
 		"\n\n\t1"
@@ -224,6 +241,7 @@ def dungeon():
 
 
 def secret_door():
+	clear_screen()
 	print("\nAfter moving the body out of the way, you realize there are some rotted boards covering what looks like a well."
 		"\nAs you lower yourself down the now shallow well, you enter a vast tunnel system. Upon examining"
 		"\n one of the walls you notice some strange markings."
@@ -245,6 +263,7 @@ def secret_door():
 		game_over()
 
 def deep_tomb():
+	clear_screen()
 	print("Looking around for anything you could use as a distraction, you see an empty glass bottle partly burried in the dirt."
 		"\nyou dig it up and head back to the area the strangers were. Once there, you hurl the bottle as far away from the door"
 		"\nthey are guarding as you can. Startled by the breaking bottle, the 5 men look at each other and then say 'Lets check it out.'"
@@ -285,6 +304,7 @@ def deep_tomb():
 			return key_guess
 
 def deep_tomb_2():
+	clear_screen()
 	print("'That makes sense because the key we want is lighter than the rest. Now I have 3 keys left and one more scale, what do I do now?'"
 	"\nThinking a bit more you realize you can just repeat the process again to find the correct key."
 	"\nYou look down at the keys in your hand and see keys #1, #3 and #7. One of these has to be it."
@@ -314,6 +334,7 @@ def deep_tomb_2():
 		fake_burial_room()
 
 def fake_burial_room():
+	clear_screen()
 	print("As you descend the spiral stairs it opens up into a large cavern. In the middle of the cavern is a sarcophagus surrounded by what appears"
 		"\nto be various gifts, coins, and jewlery, and a large table with shackels coming from the 4 corners. You step a little closer and realize the"
 		"\ntable is covered in blood stains... 'Looks like they used this table for sacrifices to whomever is in this sarcophagus.' Looking around you see"
@@ -356,6 +377,7 @@ def fake_burial_room():
 
 
 def game_over():
+	clear_screen()
 	print("GAME OVER")
 	play_again = input("y / n: ")
 	if play_again == 'y':
